@@ -1,4 +1,3 @@
-# Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
 explore: look_data {
   hidden: no
     join: look_data__fields {
