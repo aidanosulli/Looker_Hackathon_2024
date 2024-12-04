@@ -1,4 +1,5 @@
 explore: look_data {
+  hidden: no #looker is broken sometimes
     join: look_data__fields {
       view_label: "Look Data: Fields"
       sql: LEFT JOIN UNNEST(${look_data.fields}) as look_data__fields ;;
@@ -13,6 +14,7 @@ view: look_data {
     sql: ${TABLE}.fields ;;
   }
   dimension: look_id {
+    primary_key: yes
     type: number
     sql: ${TABLE}.look_id ;;
   }
