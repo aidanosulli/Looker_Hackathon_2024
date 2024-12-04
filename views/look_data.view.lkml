@@ -1,6 +1,6 @@
 # Un-hide and use this explore, or copy the joins into another explore, to get all the fully nested relationships from this view
 explore: look_data {
-  hidden: yes
+  hidden: no
     join: look_data__fields {
       view_label: "Look Data: Fields"
       sql: LEFT JOIN UNNEST(${look_data.fields}) as look_data__fields ;;
@@ -15,6 +15,7 @@ view: look_data {
     sql: ${TABLE}.fields ;;
   }
   dimension: look_id {
+    primary_key: yes
     type: number
     sql: ${TABLE}.look_id ;;
   }
