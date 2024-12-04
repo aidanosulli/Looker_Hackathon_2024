@@ -9,4 +9,3 @@ datagroup: 2023_12_03_sois_default_datagroup {
 }
 
 persist_with: 2023_12_03_sois_default_datagroup
-
