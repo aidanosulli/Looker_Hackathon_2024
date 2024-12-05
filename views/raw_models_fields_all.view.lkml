@@ -59,7 +59,7 @@ view: raw_models_fields_all {
   dimension: sankey_view_name {
     description: "Version appending item type for visualization in sankey diagram."
     type: string
-    sql: CONCAT("View: ",${view_name} ;;
+    sql: CONCAT("View: ",${view_name}) ;;
   }
 
   dimension: field_name {
