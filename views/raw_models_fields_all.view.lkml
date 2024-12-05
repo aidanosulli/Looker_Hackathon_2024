@@ -30,6 +30,8 @@ view: raw_models_fields_all {
   }
 
   dimension: field_name {
+    description: "This is the array of fields."
+    hidden:  yes
     type: string
     sql: ${TABLE}.field_name ;;
   }
@@ -60,6 +62,8 @@ view: raw_models_fields_all {
   }
 
   dimension: suggest_dimension {
+    label: "Field"
+    primary_key: yes
     type: string
     sql: ${TABLE}.suggest_dimension ;;
   }

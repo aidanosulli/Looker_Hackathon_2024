@@ -21,6 +21,8 @@ view: final_look_view {
   }
 
   dimension: fields {
+    hidden: yes
+    description: "This is the array of fields."
     type: string
     sql: ${TABLE}.fields ;;
   }
@@ -36,6 +38,7 @@ view: final_look_view {
   }
 
   dimension: look_data__fields {
+    label: "Field"
     type: string
     sql: ${TABLE}.look_data__fields ;;
   }
@@ -43,11 +46,11 @@ view: final_look_view {
   set: detail {
     fields: [
         look_id,
-	look_name,
-	fields,
-	view,
-	model,
-	look_data__fields
+  look_name,
+  fields,
+  view,
+  model,
+  look_data__fields
     ]
   }
 }
