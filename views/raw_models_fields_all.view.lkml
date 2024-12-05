@@ -14,6 +14,12 @@ view: raw_models_fields_all {
     sql: ${TABLE}.model_name ;;
   }
 
+  dimension: sankey_model_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql: CONCAT("Model: ",${model_name}) ;;
+  }
+
   dimension: explore_name {
     type: string
     sql: ${TABLE}.explore_name;;
@@ -22,12 +28,20 @@ view: raw_models_fields_all {
       url: "https://hack.looker.com/explore/{{model_name_for_url}}/{{explore_name_for_url}}"}
   }
 
+  dimension: sankey_explore_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql:CONCAT("Explore: ",${explore_name}) ;;
+  }
+
   dimension: explore_name_for_url {
+    hidden: yes
     type: string
     sql: LOWER(REPLACE(${explore_name}, ' ', '_'));;
   }
 
   dimension: model_name_for_url {
+    hidden: yes
     type:  string
     sql: LOWER(REPLACE(${model_name}, ' ', '_'));;
   }
@@ -79,6 +93,12 @@ view: raw_models_fields_all {
     primary_key: yes
     type: string
     sql: ${TABLE}.suggest_dimension ;;
+  }
+
+  dimension: sankey_field_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql: CONCAT("Field: ", ${suggest_dimension});;
   }
 
   dimension: suggest_explore {

@@ -24,6 +24,12 @@ view: dashboard_data_unnested {
     }
   }
 
+  dimension: sankey_dashboard_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql: CONCAT("Dashboard: ",${dashboard_name}) ;;
+  }
+
   dimension: element_id {
     label: "Tile ID"
     type: string

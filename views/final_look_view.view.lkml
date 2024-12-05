@@ -23,6 +23,12 @@ view: final_look_view {
       url: "https://hack.looker.com/looks/{{final_look_view.look_id}}"}
   }
 
+  dimension: sankey_look_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql: CONCAT("Look: ",${look_name}) ;;
+  }
+
   dimension: fields {
     hidden: yes
     description: "This is the array of fields."
