@@ -44,7 +44,7 @@ The Looker Lineage Dashboard fills this gap by:
 
 ## Special Thanks to
 
-My Team!:
+My Team!
 
 - **Aaron Gutierrez**
 - **Kate Alice Moore**
