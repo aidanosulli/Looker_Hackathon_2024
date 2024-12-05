@@ -1,0 +1,3 @@
+functions-framework==3.5.0
+looker_sdk
+google-cloud-bigquery
