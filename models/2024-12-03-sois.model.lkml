@@ -26,3 +26,18 @@ join: dashboard_data_unnested {
 }
 
 persist_with: 2023_12_03_sois_default_datagroup
+
+explore: aaron_test {
+  label: "Aaron Test"
+  from: raw_models_fields_all
+
+  join:  look_data__fields {
+    relationship: many_to_many
+    sql_on: ${aaron_test.suggest_dimension} = ${look_data__fields.look_data__fields} ;;
+  }
+
+  join: look_data {
+    sql: LEFT JOIN UNNEST(${look_data.fields}) as look_data__fields ;;
+    relationship: one_to_many
+  }
+}
