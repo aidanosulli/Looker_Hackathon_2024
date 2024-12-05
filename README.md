@@ -40,3 +40,14 @@ The Looker Lineage Dashboard fills this gap by:
 🚦 **Non-breaking Change Detection**: Identify changes that don't result in immediate errors but may still impact data interpretations.
 
 🔍 **Customizable Insights**: Drill down into specific fields or views to analyze their dependencies.
+
+
+## Special Thanks to
+
+My Team!:
+
+- **Aaron Gutierrez**
+- **Kate Alice Moore**
+- **Xavier Hamida**
+- **Aidan O'Sullivan**
+
