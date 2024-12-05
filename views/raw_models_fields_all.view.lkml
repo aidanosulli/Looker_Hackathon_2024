@@ -60,6 +60,7 @@ view: raw_models_fields_all {
   }
 
   dimension: suggest_dimension {
+    primary_key: yes
     type: string
     sql: ${TABLE}.suggest_dimension ;;
   }
