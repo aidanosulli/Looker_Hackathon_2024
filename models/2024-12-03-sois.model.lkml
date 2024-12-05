@@ -11,16 +11,17 @@ datagroup: 2023_12_03_sois_default_datagroup {
 explore: raw_models_fields_all  {
   hidden:  no
 
-join: look_data {
-  type: left_outer
-  relationship: many_to_many
-  sql_on: ${raw_models_fields_all.field_name}=${look_data.fields} ;;
-}
+# join: look_data {
+#   type: left_outer
+#   relationship: many_to_many
+#   sql_on: ${raw_models_fields_all.field_name}=${look_data.fields} ;;
+# }
 
 join: look_data__fields {
   view_label: "Look Data: Fields"
-  sql: LEFT JOIN UNNEST(${look_data.fields}) as look_data__fields ;;
-  relationship: one_to_many
+  type:  left_outer
+  relationship: many_to_many
+  sql_on: ${raw_models_fields_all.field_name}=${look_data__fields.look_data__fields} ;;
 }
 
 }
