@@ -8,4 +8,8 @@ datagroup: 2023_12_03_sois_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+explore: raw_models_fields_all  {
+  hidden:  no
+}
+
 persist_with: 2023_12_03_sois_default_datagroup
