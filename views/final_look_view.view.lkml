@@ -18,6 +18,9 @@ view: final_look_view {
   dimension: look_name {
     type: string
     sql: ${TABLE}.look_name ;;
+    link: {
+      label: "View Look"
+      url: "https://hack.looker.com/looks/{{final_look_view.look_id}}"}
   }
 
   dimension: fields {
