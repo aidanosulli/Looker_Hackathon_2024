@@ -10,6 +10,7 @@ view: look_data {
   sql_table_name: `field-dependency-tracker.api_responses.look_data` ;;
 
   dimension: fields {
+    description: "This is the array of fields."
     hidden: yes
     sql: ${TABLE}.fields ;;
   }
@@ -39,6 +40,7 @@ view: look_data {
 view: look_data__fields {
 
   dimension: look_data__fields {
+    label: "Field"
     type: string
     sql: look_data__fields ;;
   }

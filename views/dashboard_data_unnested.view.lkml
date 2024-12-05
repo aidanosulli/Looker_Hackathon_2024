@@ -21,11 +21,13 @@ view: dashboard_data_unnested {
   }
 
   dimension: element_id {
+    label: "Tile ID"
     type: string
     sql: ${TABLE}.element_id ;;
   }
 
   dimension: element_title {
+    label: "Tile"
     type: string
     sql: ${TABLE}.element_title ;;
   }
@@ -36,11 +38,14 @@ view: dashboard_data_unnested {
   }
 
   dimension: fields {
+    hidden: yes
+    description: "This is the array of fields."
     type: string
     sql: ${TABLE}.fields ;;
   }
 
   dimension: dash_fields {
+    label: "Field"
     type: string
     sql: ${TABLE}.dash_fields ;;
   }
@@ -48,12 +53,12 @@ view: dashboard_data_unnested {
   set: detail {
     fields: [
         dashboard_id,
-	dashboard_name,
-	element_id,
-	element_title,
-	explore_name,
-	fields,
-	dash_fields
+  dashboard_name,
+  element_id,
+  element_title,
+  explore_name,
+  fields,
+  dash_fields
     ]
   }
 }
