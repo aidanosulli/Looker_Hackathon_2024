@@ -46,8 +46,8 @@ The Looker Lineage Dashboard fills this gap by:
 
 My Team!
 
-- **Aaron Gutierrez**
-- **Kate Alice Moore**
-- **Xavier Hamida**
-- **Aidan O'Sullivan**
+- [**Aaron Gutierrez**](https://www.linkedin.com/in/aaron-gutierrez/)
+- [**Kate Alice Moore**](https://www.linkedin.com/in/kate-moore-803/)
+- [**Xavier Hamida**](https://www.linkedin.com/in/xavierhamida/)
+- [**Aidan O'Sullivan**](https://www.linkedin.com/in/aidanosullivan/)
 
