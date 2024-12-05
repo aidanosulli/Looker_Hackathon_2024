@@ -19,12 +19,17 @@ view: raw_models_fields_all {
     sql: ${TABLE}.explore_name;;
     link: {
       label: "View Explore"
-      url: "https://hack.looker.com/explore/{{explore_name_for_url}}"}
+      url: "https://hack.looker.com/explore/{{model_name_for_url}}/{{explore_name_for_url}}"}
   }
 
   dimension: explore_name_for_url {
     type: string
     sql: LOWER(REPLACE(${explore_name}, ' ', '_'));;
+  }
+
+  dimension: model_name_for_url {
+    type:  string
+    sql: LOWER(REPLACE(${model_name}, ' ', '_'));;
   }
 
   dimension: field_type {
