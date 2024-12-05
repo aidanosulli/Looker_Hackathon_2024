@@ -17,6 +17,12 @@ join: look_data {
   sql_on: ${raw_models_fields_all.field_name}=${look_data.fields} ;;
 }
 
+join: look_data__fields {
+  view_label: "Look Data: Fields"
+  sql: LEFT JOIN UNNEST(${look_data.fields}) as look_data__fields ;;
+  relationship: one_to_many
+}
+
 }
 
 persist_with: 2023_12_03_sois_default_datagroup
