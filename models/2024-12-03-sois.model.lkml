@@ -12,9 +12,15 @@ explore: raw_models_fields_all  {
   hidden:  no
 
 join: final_look_view {
-  type:  left_outer
+  type: left_outer
   relationship: many_to_many
   sql_on:  ${raw_models_fields_all.suggest_dimension}=${final_look_view.look_data__fields} ;;
+}
+
+join: dashboard_data_unnested {
+  type: left_outer
+  relationship: many_to_many
+  sql_on: ${raw_models_fields_all.suggest_dimension}=${dashboard_data_unnested.dash_fields} ;;
 }
 
 }
