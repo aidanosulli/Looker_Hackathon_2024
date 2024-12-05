@@ -56,6 +56,12 @@ view: raw_models_fields_all {
     sql: ${TABLE}.view_name ;;
   }
 
+  dimension: sankey_view_name {
+    description: "Version appending item type for visualization in sankey diagram."
+    type: string
+    sql: CONCAT("View: ",${view_name}) ;;
+  }
+
   dimension: field_name {
     description: "This is the array of fields."
     hidden:  yes
