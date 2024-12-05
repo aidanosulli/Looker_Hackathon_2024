@@ -18,6 +18,10 @@ view: dashboard_data_unnested {
   dimension: dashboard_name {
     type: string
     sql: ${TABLE}.dashboard_name ;;
+    link: {
+      label: "View Dashboard"
+      url: "https://hack.looker.com/dashboards/{{ dashboard_data_unnested.dashboard_id }}"
+    }
   }
 
   dimension: element_id {
