@@ -41,8 +41,7 @@ def field_finder(request):
 
     # BigQuery client and table reference
     client = bigquery.Client()
-    table_id = "field-dependency-tracker.api_responses.look_data"  # Replace with your details
-    table_id = "aarons-awesome-project.looker_hackathon.look_data2"  # Replace with your details
+    table_id = "your_project.your_dataset.look_data"  # Replace with your details
 
     job_config = bigquery.LoadJobConfig(
                 schema=bigquery_schema,
