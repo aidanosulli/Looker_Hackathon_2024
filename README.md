@@ -41,6 +41,29 @@ The Looker Lineage Dashboard fills this gap by:
 
 🔍 **Customizable Insights**: Drill down into specific fields or views to analyze their dependencies.
 
+---
+
+## Visual Output
+
+Below are examples of the Looker Lineage Dashboard in action, filtered for a specific dashboard called **Top Sales**:
+
+### Dashboard View
+
+![Dashboard Overview](images/Dashboard.png)
+*This image showcases the primary view of the Looker Lineage Dashboard, filtered to show results for a dashboard called "Top Sales"*
+
+### Lineage: Dashboards
+
+![Dashboard Sankey](images/Dashboard_Sankey.png)
+*This Sankey diagram illustrates the lineage of models, explores, views, and fields used in the Top Sales dashboard.*
+
+### Lineage: Looks
+
+![Looks Sankey](images/Looks_Sankey.png)
+*Another Sankey diagram showing the specific lineage of looks and fields tied to the Top Sales dashboard.*
+
+---
+
 
 ## Special Thanks to
 
